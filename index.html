@@ -1,23 +1,116 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/
-DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Mi Sitio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jumalenin Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #1f2933;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.25rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    a {
+      color: #0b5cad;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
-<h1>Ultimos proyectos</h1>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec iaculis posuere
-justo. Nam vel neque.</p>
-<h3>Proyecto 10borrado</h3>
-<p>Etiam consectetuer, mauris vitae cursus scelerisque, dui turpis dignissim justo, et
-euismod enim odio sit amet erat.</p>
-<p><a href="imagenes/proyecto1.png" title="Imagen del Proyecto 1">Ver imagen del
-Proyecto 1</a></p>
-<h3>Proyecto 2</h3>
-<p>Etiam consectetuer, mauris vitae cursus scelerisque, dui turpis dignissim justo, et
-euismod enim odio sit amet erat.</p>
-<p><a href="imagenes/proyecto2.png" title="Imagen del Proyecto 2">Ver imagen del
-Proyecto 2</a></p>
+  <header>
+    <h1>Jumalenin</h1>
+    <p>Página central de acceso a proyectos, documentación y áreas de trabajo.</p>
+  </header>
+
+  <main>
+    <section class="grid">
+      <article class="card">
+        <h2>Clima</h2>
+        <p>Proyecto divulgativo sobre cambio climático y datos ambientales.</p>
+        <a href="https://clima.jumalenin.com/">Abrir clima</a>
+      </article>
+
+      <article class="card">
+        <h2>Support</h2>
+        <p>Área de soporte, documentación técnica y pruebas de trabajo.</p>
+        <a href="https://support.jumalenin.com/">Abrir support</a>
+      </article>
+
+      <article class="card">
+        <h2>Staging</h2>
+        <p>Entorno de pruebas antes de publicar cambios definitivos.</p>
+        <a href="https://staging.jumalenin.com/">Abrir staging</a>
+      </article>
+
+      <article class="card">
+        <h2>Common</h2>
+        <p>Repositorio de recursos comunes: estilos, componentes e imágenes reutilizables.</p>
+        <a href="https://github.com/guinealm/common">Abrir GitHub common</a>
+      </article>
+
+      <article class="card">
+        <h2>Home</h2>
+        <p>Repositorio de esta página principal.</p>
+        <a href="https://github.com/guinealm/home">Abrir GitHub home</a>
+      </article>
+
+      <article class="card">
+        <h2>Trabajo1</h2>
+        <p>Proyecto del curso de desarrollo web HTML, CSS y JavaScript.</p>
+        <a href="https://github.com/guinealm/Trabajo1">Abrir Trabajo1</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    Jumalenin · Versión inicial de home
+  </footer>
 </body>
 </html>
